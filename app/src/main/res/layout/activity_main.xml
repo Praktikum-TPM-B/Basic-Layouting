@@ -32,31 +32,30 @@
             android:hint="@string/password"
             android:layout_marginBottom="10dp"/>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:gravity="center"
         android:orientation="horizontal"
         android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:layout_gravity="center">
+        android:paddingRight="16dp">
 
         <Button
             android:id="@+id/btn_signIn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/sign_in"
-            android:backgroundTint="@color/teal_700"/>
+            android:backgroundTint="@color/teal_700"
+            android:text="@string/sign_in" />
 
         <Button
             android:id="@+id/btn_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="12dp"
-            android:text="@string/register"
-            android:backgroundTint="@color/teal_700"/>
-    </LinearLayout>
+            android:layout_gravity="end"
+            android:layout_marginStart="100dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="@string/register" />
+    </RelativeLayout>
 
 </LinearLayout>
